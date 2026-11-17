@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install ruff
-        run: pip install ruff
+        run: pip install ruff==0.15.22  # keep in step with .pre-commit-config.yaml
 
       - name: Ruff lint
         run: ruff check podcast_cleaner/ tests/
